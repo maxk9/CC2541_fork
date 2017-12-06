@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>2</fileVersion>
+    <fileChecksum>995625089</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\source\uart_dma.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\hal_wait.pbi</file>
+            <file>$PROJ_DIR$\..\common\cc2540\cc254x_f256_sbl.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\uart_dma.__cstat.et</file>
+            <file>$PROJ_DIR$\source\components\hal_types.h</file>
+            <file>$PROJ_DIR$\Debug\Exe\uart_dma_cc254x.sim</file>
+            <file>$PROJ_DIR$\source\components\hal_wait.c</file>
+            <file>$PROJ_DIR$\source\components\hal_wait.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\hal_wait.r51</file>
+            <file>$PROJ_DIR$\source\components\ioCC254x_bitdef.h</file>
+            <file>$PROJ_DIR$\Debug\Exe\uart_dma_cc254x.a51</file>
+            <file>$PROJ_DIR$\Debug\Obj\uart_dma.pbi</file>
+            <file>$PROJ_DIR$\Debug\Exe\uart_dma_cc254x.d51</file>
+            <file>$TOOLKIT_DIR$\inc\ioCC2541.h</file>
+            <file>$PROJ_DIR$\source\components\dma.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\uart_dma.r51</file>
+            <file>$PROJ_DIR$\Debug\Exe\uart_dma_cc254x.bin</file>
+            <file>$TOOLKIT_DIR$\lib\clib\cl-pli-blxd-1e16x01.r51</file>
+            <file>$PROJ_DIR$\Debug\Obj\hal_wait.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\uart_dma_cc254x.pbd</file>
+            <file>$TOOLKIT_DIR$\config\devices\Texas Instruments\lnk51ew_cc2541F256_banked.xcl</file>
+            <file>$PROJ_DIR$\Debug\Exe\uart_dma_cc254x.hex</file>
+            <file>$PROJ_DIR$\..\common\cc2540\ti_51ew_cc2540b.xcl</file>
+            <file>$PROJ_DIR$\Debug\List\uart_dma_cc254x.map</file>
+        </outputs>
+        <file>
+            <name>$PROJ_DIR$\source\uart_dma.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 3</file>
+                </tool>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 15</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 11</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 4 7 14 9 13</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 4 14 7 9 13</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\uart_dma_cc254x.sim</name>
+            <inputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 2 8 15 17</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\source\components\hal_wait.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 18</file>
+                </tool>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 8</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 1</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 4</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 4</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\uart_dma_cc254x.a51</name>
+            <inputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 2 8 15 17</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\uart_dma_cc254x.d51</name>
+            <outputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 23 21</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 22 8 15 17</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\uart_dma_cc254x.bin</name>
+            <inputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 20 8 15 17</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 12 23 21</file>
+                </tool>
+            </outputs>
+        </file>
+    </configuration>
+    <configuration>
+        <name>primary</name>
+        <outputs>
+            <file>$PROJ_DIR$\source\uart_dma.c</file>
+            <file>$PROJ_DIR$\source\components\hal_types.h</file>
+            <file>$PROJ_DIR$\source\components\hal_wait.c</file>
+            <file>$PROJ_DIR$\source\components\hal_wait.h</file>
+            <file>$PROJ_DIR$\source\components\ioCC254x_bitdef.h</file>
+            <file>$TOOLKIT_DIR$\inc\ioCC2541.h</file>
+            <file>$PROJ_DIR$\source\components\dma.h</file>
+            <file>$PROJ_DIR$\primary\Obj\hal_wait.pbi</file>
+            <file>$PROJ_DIR$\primary\Obj\hal_wait.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\lib\clib\cl-pli-blxd-1e16x01.r51</file>
+            <file>$PROJ_DIR$\primary\Obj\uart_dma.__cstat.et</file>
+            <file>$PROJ_DIR$\primary\Obj\uart_dma.r51</file>
+            <file>$PROJ_DIR$\primary\Obj\hal_wait.r51</file>
+            <file>$PROJ_DIR$\primary\Obj\uart_dma.pbi</file>
+            <file>$PROJ_DIR$\primary\Exe\uart_dma_cc254x.bin</file>
+            <file>$TOOLKIT_DIR$\config\devices\Texas Instruments\lnk51ew_cc2541F256_banked.xcl</file>
+        </outputs>
+        <file>
+            <name>$PROJ_DIR$\source\uart_dma.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 10</file>
+                </tool>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 11</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 13</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 1 3 6 4 5</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 1 6 3 4 5</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\source\components\hal_wait.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 8</file>
+                </tool>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 12</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 7</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 1</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 1</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\primary\Exe\uart_dma_cc254x.bin</name>
+            <inputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 15 12 11 9</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 14</file>
+                </tool>
+            </outputs>
+        </file>
+    </configuration>
+</project>

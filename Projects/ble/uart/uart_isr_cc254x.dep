@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>2</fileVersion>
+    <fileChecksum>2859357715</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\source\components\hal_types.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\hal_wait.r51</file>
+            <file>$PROJ_DIR$\Debug\Exe\uart_isr_cc254x.d51</file>
+            <file>$PROJ_DIR$\Debug\Obj\uart_isr.r51</file>
+            <file>$PROJ_DIR$\source\components\hal_wait.h</file>
+            <file>$PROJ_DIR$\source\uart_isr.c</file>
+            <file>$TOOLKIT_DIR$\inc\ioCC2543.h</file>
+            <file>$PROJ_DIR$\source\components\hal_wait.c</file>
+            <file>$PROJ_DIR$\source\components\ioCC254x_bitdef.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\uart_isr.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\hal_wait.pbi</file>
+        </outputs>
+        <file>
+            <name>$PROJ_DIR$\source\uart_isr.c</name>
+            <outputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 3</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 9</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 0 8 4 6</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\source\components\hal_wait.c</name>
+            <outputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 1</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 10</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 2</file>
+                </tool>
+            </outputs>
+        </file>
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>XLINK</tool>
+        </forcedrebuild>
+    </configuration>
+</project>

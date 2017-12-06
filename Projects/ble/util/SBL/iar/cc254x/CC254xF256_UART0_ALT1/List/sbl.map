@@ -1,0 +1,1150 @@
+################################################################################
+#                                                                              #
+#      IAR Universal Linker V6.4.6.89                                          #
+#                                                                              #
+#           Link time     =  28/Sep/2017  15:30:04                             #
+#           Target CPU    =  x51                                               #
+#           List file     =  "C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects #
+#                            \ble\util\SBL\iar\cc254x\CC254xF256_UART0_ALT1\Li #
+#                            st\sbl.map"                                       #
+#           Output file 1 =  "C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects #
+#                            \ble\util\SBL\iar\cc254x\CC254xF256_UART0_ALT1\Ex #
+#                            e\sbl.bin"                                        #
+#                            Format: raw-binary                                #
+#           Command line  =  -f                                                #
+#                            C:\Users\kopusov.FT\AppData\Local\Temp\EWF3A7.tmp #
+#                            ("C:\Texas Instruments\BLE-CC254x-1.4.2.2\Project #
+#                            s\ble\util\SBL\iar\cc254x\CC254xF256_UART0_ALT1\O #
+#                            bj\hal_adc.r51"                                   #
+#                            "C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects #
+#                            \ble\util\SBL\iar\cc254x\CC254xF256_UART0_ALT1\Ob #
+#                            j\hal_flash.r51"                                  #
+#                            "C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects #
+#                            \ble\util\SBL\iar\cc254x\CC254xF256_UART0_ALT1\Ob #
+#                            j\sbl_exec.r51"                                   #
+#                            "C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects #
+#                            \ble\util\SBL\iar\cc254x\CC254xF256_UART0_ALT1\Ob #
+#                            j\sbl_ivec.r51"                                   #
+#                            "C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects #
+#                            \ble\util\SBL\iar\cc254x\CC254xF256_UART0_ALT1\Ob #
+#                            j\sbl_main.r51"                                   #
+#                            -o                                                #
+#                            "C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects #
+#                            \ble\util\SBL\iar\cc254x\CC254xF256_UART0_ALT1\Ex #
+#                            e\sbl.bin"                                        #
+#                            -Fraw-binary -l                                   #
+#                            "C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects #
+#                            \ble\util\SBL\iar\cc254x\CC254xF256_UART0_ALT1\Li #
+#                            st\sbl.map"                                       #
+#                            -xmsn                                             #
+#                            "-IC:\Texas Instruments\BLE-CC254x-1.4.2.2\Projec #
+#                            ts\ble\util\SBL\iar\cc254x\..\..\app\cc254x\"     #
+#                            -f                                                #
+#                            "C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects #
+#                            \ble\util\SBL\app\cc254x\sbl_cc254x.xcl"          #
+#                            (-D_XDATA_BEG=0x0000 -D_XDATA_END=0x1EFF          #
+#                            -D_IDATA_END=0xFF -D_IVEC_BEG=0x0000              #
+#                            -D_IVEC_END=0x07FF -D?REGISTER_BANK=0             #
+#                            -D_REGISTER_BANK_BEG=0 -D?PBANK_NUMBER=00         #
+#                            -D_BREG_BEG=0x00 -D?VB=0x20                       #
+#                            -Z(BIT)BREG=_BREG_BEG -Z(BIT)BIT_N=0-7F           #
+#                            -Z(DATA)REGISTERS+8=_REGISTER_BANK_BEG            #
+#                            -Z(DATA)BDATA_Z,BDATA_N,BDATA_I=20-2F             #
+#                            -Z(DATA)VREG=08-7F -Z(DATA)PSP,XSP=08-7F          #
+#                            -Z(DATA)DOVERLAY=08-7F                            #
+#                            -Z(DATA)DATA_I,DATA_Z,DATA_N=08-7F                #
+#                            -U(IDATA)0-7F=(DATA)0-7F                          #
+#                            -Z(IDATA)IDATA_I,IDATA_Z,IDATA_N=08-_IDATA_END    #
+#                            -Z(IDATA)ISTACK+_IDATA_STACK_SIZE#08-_IDATA_END   #
+#                            -Z(IDATA)IOVERLAY=08-FF                           #
+#                            -Z(CODE)INTVEC=_IVEC_BEG                          #
+#                            -Z(CODE)BIT_ID,BDATA_ID,DATA_ID,IDATA_ID,IXDATA_I #
+#                            D,PDATA_ID,XDATA_ID=_IVEC_BEG-_IVEC_END           #
+#                            -P(CODE)CSTART,RCODE,DIFUNCT,NEAR_CODE=_IVEC_BEG- #
+#                            _IVEC_END                                         #
+#                            -P(CODE)BANK_RELAYS=_IVEC_BEG-_IVEC_END           #
+#                            -P(CODE)BANKED_CODE=_IVEC_BEG-_IVEC_END           #
+#                            -Z(XDATA)XSTACK+_XDATA_STACK_SIZE=_XDATA_BEG-_XDA #
+#                            TA_END                                            #
+#                            -Z(XDATA)XDATA_Z,XDATA_I,PDATA_Z=_XDATA_BEG-_XDAT #
+#                            A_END                                             #
+#                            -P(XDATA)XDATA_N=_XDATA_BEG-_XDATA_END -cx51      #
+#                            -D_FIRST_BANK_ADDR=0x10000                        #
+#                            -M(CODE)[(_CODEBANK_START+_FIRST_BANK_ADDR)-(_COD #
+#                            EBANK_END+_FIRST_BANK_ADDR)]*_NR_OF_BANKS+_FIRST_ #
+#                            BANK_ADDR=0x8000                                  #
+#                            -ww69=i -HFFFF)                                   #
+#                            "-IC:\Program Files (x86)\IAR Systems\Embedded Wo #
+#                            rkbench 8.0\8051\CONFIG\"                         #
+#                            -D_NR_OF_VIRTUAL_REGISTERS=10 -D?PBANK=0x93       #
+#                            -D?CBANK=0x9F -D?CBANK_MASK=0xFF                  #
+#                            -e?BCALL_FF=?BCALL -e?BRET_FF=?BRET               #
+#                            -e?BDISPATCH_FF=?BDISPATCH                        #
+#                            -D_CODEBANK_START=0x8000 -D_CODEBANK_END=0xFFFF   #
+#                            -D_NR_OF_BANKS=0x07                               #
+#                            -e_large_write=_formatted_write                   #
+#                            -e_large_read=_formatted_read -s                  #
+#                            __program_start                                   #
+#                            "C:\Program Files (x86)\IAR Systems\Embedded Work #
+#                            bench 8.0\8051\LIB\CLIB\cl-pli-blxd-1e16x01.r51"  #
+#                            -D_IDATA_STACK_SIZE=0xC0 -D?ESP=0 -D?ESP_MASK=0   #
+#                            -D_EXTENDED_STACK_START=0                         #
+#                            -D_EXTENDED_STACK_SIZE=0                          #
+#                            -D_PDATA_STACK_SIZE=0x0                           #
+#                            -D_XDATA_STACK_SIZE=0x180                         #
+#                            -D_XDATA_HEAP_SIZE=0xFF -D_FAR_HEAP_SIZE=0xFFF    #
+#                            -D_HUGE_HEAP_SIZE=0xFFF                           #
+#                            -D_FAR22_HEAP_SIZE=0xFFF)                         #
+#                                                                              #
+#                           Copyright (C) 1987-2016 IAR Systems AB.            #
+################################################################################
+
+
+
+
+
+                ****************************************
+                *                                      *
+                *           CROSS REFERENCE            *
+                *                                      *
+                ****************************************
+
+       Program entry at : CODE      000001E3  Relocatable, from module : CSTARTUP
+
+
+
+
+                ****************************************
+                *                                      *
+                *            RUNTIME MODEL             *
+                *                                      *
+                ****************************************
+
+  __SystemLibrary          = CLib
+  __calling_convention     = xdata_reentrant
+  __code_model             = banked
+  __core                   = plain
+  __data_model             = large
+  __dptr_size              = 16
+  __extended_stack         = disabled
+  __location_for_constants = data
+  __number_of_dptrs        = 1
+  __register_banks         = *
+  __rt_version             = 1
+
+                ****************************************
+                *                                      *
+                *    AUTOMATIC SYMBOL REDIRECTIONS     *
+                *                                      *
+                ****************************************
+
+                  There are no automatic symbol redirections.
+
+
+
+                ****************************************
+                *                                      *
+                *              MODULE MAP              *
+                *                                      *
+                ****************************************
+
+
+  DEFINED ABSOLUTE ENTRIES
+  PROGRAM MODULE, NAME : ?ABS_ENTRY_MOD
+
+Absolute parts
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _FAR22_HEAP_SIZE        00000FFF 
+           _HUGE_HEAP_SIZE         00000FFF 
+           _FAR_HEAP_SIZE          00000FFF 
+           _XDATA_HEAP_SIZE        000000FF 
+           _XDATA_STACK_SIZE       00000180 
+           _PDATA_STACK_SIZE       00000000 
+           _EXTENDED_STACK_SIZE    00000000 
+           _EXTENDED_STACK_START   00000000 
+           ?ESP_MASK               00000000 
+           ?ESP                    00000000 
+           _IDATA_STACK_SIZE       000000C0 
+           _NR_OF_BANKS            00000007 
+           _CODEBANK_END           0000FFFF 
+           _CODEBANK_START         00008000 
+           ?CBANK_MASK             000000FF 
+           ?CBANK                  0000009F        ?RESET_CODE_BANK (CSTARTUP)
+                                                   Segment part 0 (?BANKED_CODE_SUPPORT)
+           ?PBANK                  00000093 
+           _NR_OF_VIRTUAL_REGISTERS
+                                   00000010 
+           _FIRST_BANK_ADDR        00010000 
+           ?VB                     00000020        ?BANKED_ENTER_XDATA (?BANKED_ENTER_XDATA)
+                                                   ?BANKED_LEAVE_XDATA (?BANKED_LEAVE_XDATA)
+           _BREG_BEG               00000000 
+           ?PBANK_NUMBER           00000000 
+           _REGISTER_BANK_BEG      00000000 
+           ?REGISTER_BANK          00000000        Segment part 6 (CSTARTUP)
+           _IVEC_END               000007FF 
+           _IVEC_BEG               00000000 
+           _IDATA_END              000000FF 
+           _XDATA_END              00001EFF 
+           _XDATA_BEG              00000000 
+    *************************************************************************
+
+  FILE NAME : C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\util\SBL\iar\cc254x\CC254xF256_UART0_ALT1\Obj\hal_adc.r51
+  PROGRAM MODULE, NAME : hal_adc
+
+  SEGMENTS IN THE MODULE
+  ======================
+SFR_AN
+  Relative segment, address: DATA 000000B4 - 000000B4 (0x1 bytes), align: 0
+  Segment part 1. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ADCCON1                 000000B4 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000B6 - 000000B6 (0x1 bytes), align: 0
+  Segment part 2. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ADCCON3                 000000B6 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000BA - 000000BA (0x1 bytes), align: 0
+  Segment part 3. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ADCL                    000000BA 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000BB - 000000BB (0x1 bytes), align: 0
+  Segment part 4. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ADCH                    000000BB 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000F2 - 000000F2 (0x1 bytes), align: 0
+  Segment part 5. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ADCCFG                  000000F2 
+
+    *************************************************************************
+
+  FILE NAME : C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\util\SBL\iar\cc254x\CC254xF256_UART0_ALT1\Obj\hal_flash.r51
+  PROGRAM MODULE, NAME : hal_flash
+
+  SEGMENTS IN THE MODULE
+  ======================
+SFR_AN
+  Relative segment, address: DATA 000000A8 - 000000A8 (0x1 bytes), align: 0
+  Segment part 1. ROOT        Intra module refs:   HalFlashRead
+                                                   main (sbl_main)
+                                                   sblPoll (sbl_exec)
+                                                   sblRun (sbl_main)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_IEN0                 000000A8 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           IEN0                    000000A8 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000C7 - 000000C7 (0x1 bytes), align: 0
+  Segment part 2. ROOT        Intra module refs:   HalFlashRead
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           MEMCTR                  000000C7 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000D1 - 000000D1 (0x1 bytes), align: 0
+  Segment part 3. ROOT        Intra module refs:   HalFlashWrite
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           DMAIRQ                  000000D1 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000D6 - 000000D6 (0x1 bytes), align: 0
+  Segment part 4. ROOT        Intra module refs:   HalFlashWrite
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           DMAARM                  000000D6 
+    -------------------------------------------------------------------------
+<BANKED_CODE,BANK_RELAYS..> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 0000069F - 00000724 (0x86 bytes), align: 0
+  Segment part 10.            Intra module refs:   HalFlashRead::?relay
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           HalFlashRead            0000069F 
+               XSTACK = 00000002 ( 0000000C )
+               ISTACK = 00000000 ( 00000001 )
+    -------------------------------------------------------------------------
+<BANKED_CODE,BANK_RELAYS..> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 00000725 - 0000078C (0x68 bytes), align: 0
+  Segment part 12.            Intra module refs:   HalFlashWrite::?relay
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           HalFlashWrite           00000725 
+               XSTACK = 00000002 ( 0000000A )
+    -------------------------------------------------------------------------
+<BANKED_CODE,BANK_RELAYS..> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 0000078D - 000007A5 (0x19 bytes), align: 0
+  Segment part 14.            Intra module refs:   HalFlashErase::?relay
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           HalFlashErase           0000078D 
+               ISTACK = 00000000 ( 00000002 )
+    -------------------------------------------------------------------------
+<BANKED_CODE,BANK_RELAYS..> 1 (was BANK_RELAYS)
+  Relative segment, address: CODE 00000239 - 0000023E (0x6 bytes), align: 0
+  Segment part 11.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           HalFlashRead::?relay    00000239        sblInit (sbl_exec)
+                                                   sblProc (sbl_exec)
+    -------------------------------------------------------------------------
+<BANKED_CODE,BANK_RELAYS..> 1 (was BANK_RELAYS)
+  Relative segment, address: CODE 0000023F - 00000244 (0x6 bytes), align: 0
+  Segment part 13.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           HalFlashWrite::?relay   0000023F        sblProc (sbl_exec)
+    -------------------------------------------------------------------------
+<BANKED_CODE,BANK_RELAYS..> 1 (was BANK_RELAYS)
+  Relative segment, address: CODE 00000245 - 0000024A (0x6 bytes), align: 0
+  Segment part 15.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           HalFlashErase::?relay   00000245        sblProc (sbl_exec)
+
+    *************************************************************************
+
+  FILE NAME : C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\util\SBL\iar\cc254x\CC254xF256_UART0_ALT1\Obj\sbl_exec.r51
+  PROGRAM MODULE, NAME : sbl_exec
+
+  SEGMENTS IN THE MODULE
+  ======================
+SFR_AN
+  Relative segment, address: DATA 000000C9 - 000000C9 (0x1 bytes), align: 0
+  Segment part 2. ROOT        Intra module refs:   main (sbl_main)
+                                                   sblPoll
+                                                   sblRun (sbl_main)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           WDCTL                   000000C9 
+    -------------------------------------------------------------------------
+XDATA_Z
+  Relative segment, address: XDATA 00000180 - 0000027F (0x100 bytes), align: 0
+  Segment part 8.             Intra module refs:   sblPoll
+                                                   sblProc
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           rpcBuf                  00000180 
+    -------------------------------------------------------------------------
+XDATA_Z
+  Relative segment, address: XDATA 00000280 - 00000280 (0x1 bytes), align: 0
+  Segment part 9.             Intra module refs:   sblPoll
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           sbFcs                   00000280 
+    -------------------------------------------------------------------------
+XDATA_Z
+  Relative segment, address: XDATA 00000281 - 00000281 (0x1 bytes), align: 0
+  Segment part 10.            Intra module refs:   sblPoll
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           sbIdx                   00000281 
+    -------------------------------------------------------------------------
+XDATA_Z
+  Relative segment, address: XDATA 00000282 - 00000282 (0x1 bytes), align: 0
+  Segment part 11.            Intra module refs:   sblPoll
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           sbLen                   00000282 
+    -------------------------------------------------------------------------
+XDATA_Z
+  Relative segment, address: XDATA 00000283 - 00000283 (0x1 bytes), align: 0
+  Segment part 12.            Intra module refs:   sblPoll
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           rpcSte                  00000283 
+    -------------------------------------------------------------------------
+<BANKED_CODE,BANK_RELAYS..> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 0000026F - 000002CA (0x5c bytes), align: 0
+  Segment part 13.            Intra module refs:   sblInit::?relay
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           sblInit                 0000026F 
+               calls direct
+               XSTACK = 00000000 ( 00000010 )
+    -------------------------------------------------------------------------
+<BANKED_CODE,BANK_RELAYS..> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 000002CB - 000002D2 (0x8 bytes), align: 0
+  Segment part 15.            Intra module refs:   sblInit
+                                                   sblPoll
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine0            000002CB 
+    -------------------------------------------------------------------------
+<BANKED_CODE,BANK_RELAYS..> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 000002D3 - 00000405 (0x133 bytes), align: 0
+  Segment part 16.            Intra module refs:   sblPoll::?relay
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           sblPoll                 000002D3 
+               calls direct
+               XSTACK = 00000000 ( 0000000B )
+               ISTACK = 00000000 ( 00000001 )
+    -------------------------------------------------------------------------
+<BANKED_CODE,BANK_RELAYS..> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 00000406 - 00000579 (0x174 bytes), align: 0
+  Segment part 18.            Intra module refs:   sblProc::?relay
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           sblProc                 00000406 
+               calls direct
+               XSTACK = 0000000B ( 00000012 )
+    -------------------------------------------------------------------------
+<BANKED_CODE,BANK_RELAYS..> 1 (was BANK_RELAYS)
+  Relative segment, address: CODE 0000024B - 00000250 (0x6 bytes), align: 0
+  Segment part 14.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           sblInit::?relay         0000024B        main (sbl_main)
+    -------------------------------------------------------------------------
+<BANKED_CODE,BANK_RELAYS..> 1 (was BANK_RELAYS)
+  Relative segment, address: CODE 00000251 - 00000256 (0x6 bytes), align: 0
+  Segment part 17.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           sblPoll::?relay         00000251        sblRun (sbl_main)
+    -------------------------------------------------------------------------
+<BANKED_CODE,BANK_RELAYS..> 1 (was BANK_RELAYS)
+  Relative segment, address: CODE 00000257 - 0000025C (0x6 bytes), align: 0
+  Segment part 19.            Intra module refs:   sblPoll
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           sblProc::?relay         00000257 
+
+    *************************************************************************
+
+  FILE NAME : C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\util\SBL\iar\cc254x\CC254xF256_UART0_ALT1\Obj\sbl_ivec.r51
+  PROGRAM MODULE, NAME : sbl_ivec
+
+  SEGMENTS IN THE MODULE
+  ======================
+INTVEC
+  Common segment, address: CODE 00000000 - 0000008D (0x8e bytes), align: 1
+  Segment part 0. ROOT 
+
+    *************************************************************************
+
+  FILE NAME : C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\util\SBL\iar\cc254x\CC254xF256_UART0_ALT1\Obj\sbl_main.r51
+  PROGRAM MODULE, NAME : sbl_main
+
+  SEGMENTS IN THE MODULE
+  ======================
+SFR_AN
+  Relative segment, address: DATA 00000090 - 00000090 (0x1 bytes), align: 0
+  Segment part 1. ROOT        Intra module refs:   main
+                                                   sblRun
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_P1                   00000090 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           P1                      00000090 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 0000009D - 0000009D (0x1 bytes), align: 0
+  Segment part 2. ROOT        Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SLEEPSTA                0000009D 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 0000009E - 0000009E (0x1 bytes), align: 0
+  Segment part 3. ROOT        Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           CLKCONSTA               0000009E 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000BE - 000000BE (0x1 bytes), align: 0
+  Segment part 5. ROOT        Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SLEEPCMD                000000BE 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000C6 - 000000C6 (0x1 bytes), align: 0
+  Segment part 6. ROOT        Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           CLKCONCMD               000000C6 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000D4 - 000000D4 (0x1 bytes), align: 0
+  Segment part 8. ROOT        Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           DMA0CFGL                000000D4 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000D5 - 000000D5 (0x1 bytes), align: 0
+  Segment part 9. ROOT        Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           DMA0CFGH                000000D5 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000F1 - 000000F1 (0x1 bytes), align: 0
+  Segment part 10. ROOT       Intra module refs:   sblRun
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           PERCFG                  000000F1 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000F4 - 000000F4 (0x1 bytes), align: 0
+  Segment part 11. ROOT       Intra module refs:   sblRun
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P1SEL                   000000F4 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000F8 - 000000F8 (0x1 bytes), align: 0
+  Segment part 12. ROOT       Intra module refs:   HalUARTRead
+                                                   HalUARTWrite
+                                                   sblRun
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_U1CSR                000000F8 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           U1CSR                   000000F8 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000F9 - 000000F9 (0x1 bytes), align: 0
+  Segment part 13. ROOT       Intra module refs:   HalUARTRead
+                                                   HalUARTWrite
+                                                   sblRun
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           U1DBUF                  000000F9 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000FA - 000000FA (0x1 bytes), align: 0
+  Segment part 14. ROOT       Intra module refs:   sblRun
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           U1BAUD                  000000FA 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000FB - 000000FB (0x1 bytes), align: 0
+  Segment part 15. ROOT       Intra module refs:   sblRun
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           U1UCR                   000000FB 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000FC - 000000FC (0x1 bytes), align: 0
+  Segment part 16. ROOT       Intra module refs:   sblRun
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           U1GCR                   000000FC 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000FE - 000000FE (0x1 bytes), align: 0
+  Segment part 17. ROOT       Intra module refs:   sblRun
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P1DIR                   000000FE 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000FF - 000000FF (0x1 bytes), align: 0
+  Segment part 18. ROOT       Intra module refs:   sblRun
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P2DIR                   000000FF 
+    -------------------------------------------------------------------------
+XDATA_Z
+  Relative segment, address: XDATA 00000284 - 0000028B (0x8 bytes), align: 0
+  Segment part 24.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           dmaCh0                  00000284        HalFlashWrite (hal_flash)
+    -------------------------------------------------------------------------
+XDATA_Z
+  Relative segment, address: XDATA 0000028C - 0000028C (0x1 bytes), align: 0
+  Segment part 25.            Intra module refs:   HalUARTWrite
+                                                   sblRun
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           txIdx                   0000028C 
+    -------------------------------------------------------------------------
+XDATA_Z
+  Relative segment, address: XDATA 0000028D - 0000028D (0x1 bytes), align: 0
+  Segment part 26.            Intra module refs:   HalUARTWrite
+                                                   sblRun
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           txLen                   0000028D 
+    -------------------------------------------------------------------------
+XDATA_Z
+  Relative segment, address: XDATA 0000028E - 0000028F (0x2 bytes), align: 0
+  Segment part 27.            Intra module refs:   HalUARTWrite
+                                                   sblRun
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           pTxBuf                  0000028E 
+    -------------------------------------------------------------------------
+<BANKED_CODE,BANK_RELAYS..> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 0000057A - 000005FA (0x81 bytes), align: 0
+  Segment part 32.            Intra module refs:   sblRun::?relay
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           sblRun                  0000057A 
+               calls direct
+               XSTACK = 00000000 ( 00000009 )
+    -------------------------------------------------------------------------
+<BANKED_CODE,BANK_RELAYS..> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 000005FB - 00000611 (0x17 bytes), align: 0
+  Segment part 34.            Intra module refs:   HalUARTRead::?relay
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           HalUARTRead             000005FB 
+               ISTACK = 00000000 ( 00000003 )
+    -------------------------------------------------------------------------
+<BANKED_CODE,BANK_RELAYS..> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 00000612 - 00000618 (0x7 bytes), align: 0
+  Segment part 36.            Intra module refs:   HalUARTRead
+                                                   HalUARTWrite
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine0            00000612 
+    -------------------------------------------------------------------------
+<BANKED_CODE,BANK_RELAYS..> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 00000619 - 0000063E (0x26 bytes), align: 0
+  Segment part 37.            Intra module refs:   HalUARTWrite::?relay
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           HalUARTWrite            00000619 
+               ISTACK = 00000000 ( 00000002 )
+    -------------------------------------------------------------------------
+<BANKED_CODE,BANK_RELAYS..> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 0000063F - 0000069E (0x60 bytes), align: 0
+  Segment part 39.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           main                    0000063F        ?call_main (?cmain)
+               calls direct
+    -------------------------------------------------------------------------
+<BANKED_CODE,BANK_RELAYS..> 1 (was BANK_RELAYS)
+  Relative segment, address: CODE 0000025D - 00000262 (0x6 bytes), align: 0
+  Segment part 33.            Intra module refs:   main
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           sblRun::?relay          0000025D 
+    -------------------------------------------------------------------------
+<BANKED_CODE,BANK_RELAYS..> 1 (was BANK_RELAYS)
+  Relative segment, address: CODE 00000263 - 00000268 (0x6 bytes), align: 0
+  Segment part 35.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           HalUARTRead::?relay     00000263        sblPoll (sbl_exec)
+    -------------------------------------------------------------------------
+<BANKED_CODE,BANK_RELAYS..> 1 (was BANK_RELAYS)
+  Relative segment, address: CODE 00000269 - 0000026E (0x6 bytes), align: 0
+  Segment part 38.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           HalUARTWrite::?relay    00000269        sblPoll (sbl_exec)
+
+    *************************************************************************
+
+  FILE NAME : C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\8051\LIB\CLIB\cl-pli-blxd-1e16x01.r51
+  LIBRARY MODULE, NAME : ?cexit
+
+  SEGMENTS IN THE MODULE
+  ======================
+<BANKED_CODE,BANK_RELAYS..> 1 (was CSTART)
+  Relative segment, address: CODE 00000234 - 00000238 (0x5 bytes), align: 0
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           exit                    00000234        ?call_main (?cmain)
+           ?C_EXIT                 00000234 
+           ?ROM_MONITOR_NOPS       00000234 
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?cmain
+
+  SEGMENTS IN THE MODULE
+  ======================
+<BANKED_CODE,BANK_RELAYS..> 1 (was CSTART)
+  Relative segment, address: CODE 00000140, align: 0
+  Segment part 5.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?cmain                  00000140        Segment part 13 (CSTARTUP)
+               calls direct
+    -------------------------------------------------------------------------
+<BANKED_CODE,BANK_RELAYS..> 1 (was CSTART)
+  Relative segment, address: CODE 00000140 - 0000014F (0x10 bytes), align: 0
+  Segment part 16.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __INIT_XDATA_Z          00000140        dmaCh0 (sbl_main)
+                                                   pTxBuf (sbl_main)
+                                                   rpcBuf (sbl_exec)
+                                                   rpcSte (sbl_exec)
+                                                   sbFcs (sbl_exec)
+                                                   sbIdx (sbl_exec)
+                                                   sbLen (sbl_exec)
+                                                   txIdx (sbl_main)
+                                                   txLen (sbl_main)
+    -------------------------------------------------------------------------
+<BANKED_CODE,BANK_RELAYS..> 1 (was CSTART)
+  Relative segment, address: CODE 00000150 - 00000165 (0x16 bytes), align: 0
+  Segment part 38.            Intra module refs:   ?cmain
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?call_main              00000150 
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : CSTARTUP
+
+  SEGMENTS IN THE MODULE
+  ======================
+REGISTERS
+  Relative segment, address: DATA 00000000, align: 0
+  Segment part 0.             Intra module refs:   Segment part 6
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?REGISTERS              00000000 
+    -------------------------------------------------------------------------
+ISTACK
+  Relative segment, address: IDATA 00000040, align: 0
+  Segment part 1.             Intra module refs:   Segment part 6
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?ISTACK_START           00000040 
+    -------------------------------------------------------------------------
+XSTACK
+  Relative segment, address: XDATA 00000000, align: 0
+  Segment part 3.             Intra module refs:   ?RESET_XSP
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?XSTACK_START           00000000 
+    -------------------------------------------------------------------------
+INTVEC
+  Common segment, address: CODE 00000000 - 00000002 (0x3 bytes), align: 0
+  Segment part 5. ROOT        Intra module refs:   Segment part 6
+    -------------------------------------------------------------------------
+<BANKED_CODE,BANK_RELAYS..> 1 (was CSTART)
+  Relative segment, address: CODE 000001E3 - 000001E8 (0x6 bytes), align: 0
+  Segment part 6. ROOT        Intra module refs:   Segment part 5
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __program_start         000001E3        Absolute parts (?ABS_ENTRY_MOD)
+           ?RESET_SP               000001E6 
+    -------------------------------------------------------------------------
+<BANKED_CODE,BANK_RELAYS..> 1 (was CSTART)
+  Relative segment, address: CODE 000001E9 - 000001EE (0x6 bytes), align: 0
+  Segment part 8.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?RESET_XSP              000001E9        ?XSP (VIRTUAL_REGISTERS)
+    -------------------------------------------------------------------------
+<BANKED_CODE,BANK_RELAYS..> 1 (was CSTART)
+  Relative segment, address: CODE 000001EF - 000001F1 (0x3 bytes), align: 0
+  Segment part 9.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?RESET_CODE_BANK        000001EF        Absolute parts (?BANKED_CODE_SUPPORT)
+    -------------------------------------------------------------------------
+<BANKED_CODE,BANK_RELAYS..> 1 (was CSTART)
+  Relative segment, address: CODE 000001F2 - 000001F4 (0x3 bytes), align: 0
+  Segment part 13.            Intra module refs:   Absolute parts
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : VIRTUAL_REGISTERS
+
+  SEGMENTS IN THE MODULE
+  ======================
+BREG
+  Relative segment, address: BIT 00000020.0 - 00000020.7 (0x8 bits), align: 0
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?B0                     00000020.0      Absolute parts (CSTARTUP)
+    -------------------------------------------------------------------------
+VREG
+  Relative segment, address: DATA 00000008 - 00000008 (0x1 bytes), align: 0
+  Segment part 1.             Intra module refs:   ?V1
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?V0                     00000008        ?BANKED_ENTER_XDATA (?BANKED_ENTER_XDATA)
+                                                   ?BANKED_LEAVE_XDATA (?BANKED_LEAVE_XDATA)
+                                                   HalFlashRead (hal_flash)
+                                                   HalFlashWrite (hal_flash)
+                                                   sblInit (sbl_exec)
+                                                   sblPoll (sbl_exec)
+                                                   sblProc (sbl_exec)
+    -------------------------------------------------------------------------
+VREG
+  Relative segment, address: DATA 00000009 - 00000009 (0x1 bytes), align: 0
+  Segment part 2.             Intra module refs:   ?V2
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?V1                     00000009        HalFlashRead (hal_flash)
+                                                   HalFlashWrite (hal_flash)
+                                                   sblInit (sbl_exec)
+                                                   sblPoll (sbl_exec)
+                                                   sblProc (sbl_exec)
+    -------------------------------------------------------------------------
+VREG
+  Relative segment, address: DATA 0000000A - 0000000A (0x1 bytes), align: 0
+  Segment part 3.             Intra module refs:   ?V3
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?V2                     0000000A        HalFlashRead (hal_flash)
+                                                   sblProc (sbl_exec)
+    -------------------------------------------------------------------------
+VREG
+  Relative segment, address: DATA 0000000B - 0000000B (0x1 bytes), align: 0
+  Segment part 4.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?V3                     0000000B        HalFlashRead (hal_flash)
+                                                   sblProc (sbl_exec)
+    -------------------------------------------------------------------------
+XSP
+  Relative segment, address: DATA 0000000C - 0000000D (0x2 bytes), align: 0
+  Segment part 34.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?XSP                    0000000C        ?ADD_XSTACK_DISP0_8 (?ADD_XSTACK_DISP8)
+                                                   ?ALLOC_XSTACK8 (?ALLOC_XSTACK8)
+                                                   ?BANKED_ENTER_XDATA (?BANKED_ENTER_XDATA)
+                                                   ?BANKED_LEAVE_XDATA (?BANKED_LEAVE_XDATA)
+                                                   ?DEALLOC_XSTACK8 (?DEALLOC_XSTACK8)
+                                                   ?RESET_XSP (CSTARTUP)
+                                                   ?XSTACK_DISP0_8 (?XSTACK_DISP8)
+                                                   ?XSTACK_DISP102_8 (?XSTACK_DISP8_RP)
+                                                   sblInit (sbl_exec)
+                                                   sblPoll (sbl_exec)
+                                                   sblProc (sbl_exec)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?BANKED_CODE_SUPPORT
+
+  SEGMENTS IN THE MODULE
+  ======================
+<BANKED_CODE,BANK_RELAYS..> 1 (was CSTART)
+  Relative segment, address: CODE 00000166 - 00000183 (0x1e bytes), align: 0
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?BCALL_FF               00000166        ?call_main (?cmain)
+           ?BRET_FF                0000016C        ?BANKED_LEAVE_XDATA (?BANKED_LEAVE_XDATA)
+                                                   ?Subroutine0 (sbl_main)
+                                                   HalFlashErase (hal_flash)
+           ?BDISPATCH_FF           0000016F        HalFlashErase::?relay (hal_flash)
+                                                   HalFlashRead::?relay (hal_flash)
+                                                   HalFlashWrite::?relay (hal_flash)
+                                                   HalUARTRead::?relay (sbl_main)
+                                                   HalUARTWrite::?relay (sbl_main)
+                                                   sblInit::?relay (sbl_exec)
+                                                   sblPoll::?relay (sbl_exec)
+                                                   sblProc::?relay (sbl_exec)
+                                                   sblRun::?relay (sbl_main)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?MOVE_LONG8_XDATA_IDATA
+
+  SEGMENTS IN THE MODULE
+  ======================
+<BANKED_CODE,BANK_RELAYS..> 1 (was RCODE)
+  Relative segment, address: CODE 00000215 - 00000221 (0xd bytes), align: 0
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?MOVE_LONG8_XDATA_IDATA
+                                   00000215        ?PUSH_XSTACK_I (?PUSH_XSTACK_I)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?US_SHR
+
+  SEGMENTS IN THE MODULE
+  ======================
+<BANKED_CODE,BANK_RELAYS..> 1 (was RCODE)
+  Relative segment, address: CODE 00000206 - 00000208 (0x3 bytes), align: 0
+  Segment part 1.             Intra module refs:   Segment part 2
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?US_SHR                 00000206        HalFlashWrite (hal_flash)
+                                                   sblProc (sbl_exec)
+    -------------------------------------------------------------------------
+<BANKED_CODE,BANK_RELAYS..> 1 (was RCODE)
+  Relative segment, address: CODE 00000209 - 00000214 (0xc bytes), align: 0
+  Segment part 2.             Intra module refs:   ?US_SHR
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?S_SHL
+
+  SEGMENTS IN THE MODULE
+  ======================
+<BANKED_CODE,BANK_RELAYS..> 1 (was RCODE)
+  Relative segment, address: CODE 000001D0 - 000001D2 (0x3 bytes), align: 0
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?S_SHL                  000001D0        HalFlashRead (hal_flash)
+                                                   sblProc (sbl_exec)
+    -------------------------------------------------------------------------
+<BANKED_CODE,BANK_RELAYS..> 1 (was RCODE)
+  Relative segment, address: CODE 000001D3 - 000001D5 (0x3 bytes), align: 0
+  Segment part 1.             Intra module refs:   Segment part 2
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?S_SHL_REW              000001D3 
+    -------------------------------------------------------------------------
+<BANKED_CODE,BANK_RELAYS..> 1 (was RCODE)
+  Relative segment, address: CODE 000001D6 - 000001E2 (0xd bytes), align: 0
+  Segment part 2.             Intra module refs:   ?S_SHL
+                                                   ?S_SHL_REW
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?ALLOC_XSTACK8
+
+  SEGMENTS IN THE MODULE
+  ======================
+<BANKED_CODE,BANK_RELAYS..> 1 (was RCODE)
+  Relative segment, address: CODE 000001BA - 000001CF (0x16 bytes), align: 0
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?ALLOC_XSTACK8          000001BA        sblInit (sbl_exec)
+                                                   sblPoll (sbl_exec)
+                                                   sblProc (sbl_exec)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?DEALLOC_XSTACK8
+
+  SEGMENTS IN THE MODULE
+  ======================
+<BANKED_CODE,BANK_RELAYS..> 1 (was RCODE)
+  Relative segment, address: CODE 00000184 - 0000019E (0x1b bytes), align: 0
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?DEALLOC_XSTACK8        00000184        ?Subroutine0 (sbl_exec)
+                                                   sblInit (sbl_exec)
+                                                   sblProc (sbl_exec)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?ADD_XSTACK_DISP8
+
+  SEGMENTS IN THE MODULE
+  ======================
+<BANKED_CODE,BANK_RELAYS..> 1 (was RCODE)
+  Relative segment, address: CODE 0000019F - 000001B9 (0x1b bytes), align: 0
+  Segment part 1.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?ADD_XSTACK_DISP0_8     0000019F        ?PUSH_XSTACK_I (?PUSH_XSTACK_I)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?XSTACK_DISP8
+
+  SEGMENTS IN THE MODULE
+  ======================
+<BANKED_CODE,BANK_RELAYS..> 1 (was RCODE)
+  Relative segment, address: CODE 00000222 - 0000022B (0xa bytes), align: 0
+  Segment part 1.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?XSTACK_DISP0_8         00000222        HalFlashRead (hal_flash)
+                                                   HalFlashWrite (hal_flash)
+                                                   sblInit (sbl_exec)
+                                                   sblProc (sbl_exec)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?XSTACK_DISP8_RP
+
+  SEGMENTS IN THE MODULE
+  ======================
+<BANKED_CODE,BANK_RELAYS..> 1 (was RCODE)
+  Relative segment, address: CODE 0000022C - 00000233 (0x8 bytes), align: 0
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?XSTACK_DISP102_8       0000022C        sblInit (sbl_exec)
+                                                   sblProc (sbl_exec)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?BANKED_ENTER_XDATA
+
+  SEGMENTS IN THE MODULE
+  ======================
+<BANKED_CODE,BANK_RELAYS..> 1 (was RCODE)
+  Relative segment, address: CODE 0000008E - 000000F9 (0x6c bytes), align: 0
+  Segment part 1.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?BANKED_ENTER_XDATA     0000008E        HalFlashRead (hal_flash)
+                                                   HalFlashWrite (hal_flash)
+                                                   sblInit (sbl_exec)
+                                                   sblPoll (sbl_exec)
+                                                   sblProc (sbl_exec)
+                                                   sblRun (sbl_main)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?BANKED_LEAVE_XDATA
+
+  SEGMENTS IN THE MODULE
+  ======================
+<BANKED_CODE,BANK_RELAYS..> 1 (was RCODE)
+  Relative segment, address: CODE 000000FA - 0000013F (0x46 bytes), align: 0
+  Segment part 1.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?BANKED_LEAVE_XDATA     000000FA        ?Subroutine0 (sbl_exec)
+                                                   HalFlashRead (hal_flash)
+                                                   HalFlashWrite (hal_flash)
+                                                   sblProc (sbl_exec)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?PUSH_XSTACK_I
+
+  SEGMENTS IN THE MODULE
+  ======================
+<BANKED_CODE,BANK_RELAYS..> 1 (was RCODE)
+  Relative segment, address: CODE 000001F5 - 000001F8 (0x4 bytes), align: 0
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?PUSH_XSTACK_I_TWO      000001F5        sblInit (sbl_exec)
+                                                   sblProc (sbl_exec)
+    -------------------------------------------------------------------------
+<BANKED_CODE,BANK_RELAYS..> 1 (was RCODE)
+  Relative segment, address: CODE 000001F9 - 00000205 (0xd bytes), align: 0
+  Segment part 4.             Intra module refs:   ?PUSH_XSTACK_I_TWO
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?PUSH_XSTACK_I          000001F9 
+
+    *************************************************************************
+
+  DEFINED ABSOLUTE ENTRIES
+  PROGRAM MODULE, NAME : ?FILLER_BYTES
+
+  SEGMENTS IN THE MODULE
+  ======================
+INTVEC
+  Common segment, address: CODE 00000000 - 0000008D (0x8e bytes), align: 0
+  Segment part 1.
+    -------------------------------------------------------------------------
+?FILL1
+  Relative segment, address: CODE 000007A6 - 000007FF (0x5a bytes), align: 0
+  Segment part 0.
+
+
+
+
+                ****************************************
+                *                                      *
+                *            MODULE SUMMARY            *
+                *                                      *
+                ****************************************
+
+Module                    CODE      DATA      XDATA  IDATA    BIT
+------                    ----      ----      -----  -----    ---
+                         (Rel)  (Rel)  (Abs)  (Rel)  (Rel)  (Rel)
+?ADD_XSTACK_DISP8           27
+?ALLOC_XSTACK8              22
+?BANKED_CODE_SUPPORT        30
+?BANKED_ENTER_XDATA        108
+?BANKED_LEAVE_XDATA         70
+?DEALLOC_XSTACK8            27
+?FILLER_BYTES               90
+  + common                 142
+?MOVE_LONG8_XDATA_IDATA     13
+?PUSH_XSTACK_I              17
+?S_SHL                      19
+?US_SHR                     15
+?XSTACK_DISP8               10
+?XSTACK_DISP8_RP             8
+?cexit                       5
+?cmain                      38
+CSTARTUP                    18
+  + common                   3
+VIRTUAL_REGISTERS                   6                           8
+hal_adc                                    5
+hal_flash                  281             3
+  + shared                                 1
+sbl_exec                   797                  260
+  + shared                                 1
+sbl_ivec
+  + common                 142
+sbl_main                   311            16     12
+N/A (command line)                  8           384    192
+N/A (alignment)
+----------               -----     --     --    ---    ---      -
+Total:                   1 906     14     26    656    192      8
+  + common                 142
+
+
+                ****************************************
+                *                                      *
+                *      SEGMENTS IN ADDRESS ORDER       *
+                *                                      *
+                ****************************************
+
+
+SEGMENT              SPACE    START ADDRESS   END ADDRESS     SIZE  TYPE  ALIGN
+=======              =====    =============   ===========     ====  ====  =====
+INTVEC               CODE          00000000 - 0000008D          8E   com    1
+<BANKED_CODE,BANK_RELAYS..> 1
+                     CODE          0000008E - 000007A5         718   rel    0
+?FILL1               CODE          000007A6 - 000007FF          5A   rel    0
+REGISTERS            DATA          00000000 - 00000007           8   rel    0
+VREG                 DATA          00000008 - 0000000B           4   rel    0
+PSP                  DATA               0000000C                     dse    0
+XSP                  DATA          0000000C - 0000000D           2   rel    0
+BREG                 BIT        00000020.0  -  00000020.7        8   rel    0
+SFR_AN               DATA          00000090 - 00000090           1   rel    0
+                     DATA          0000009D - 0000009E           2 
+                     DATA          000000A8 - 000000A8           1 
+                     DATA          000000B4 - 000000B4           1 
+                     DATA          000000B6 - 000000B6           1 
+                     DATA          000000BA - 000000BB           2 
+                     DATA          000000BE - 000000BE           1 
+                     DATA          000000C6 - 000000C7           2 
+                     DATA          000000C9 - 000000C9           1 
+                     DATA          000000D1 - 000000D1           1 
+                     DATA          000000D4 - 000000D6           3 
+                     DATA          000000F1 - 000000F2           2 
+                     DATA          000000F4 - 000000F4           1 
+                     DATA          000000F8 - 000000FC           5 
+                     DATA          000000FE - 000000FF           2 
+XSTACK               XDATA         00000000 - 0000017F         180   rel    0
+XDATA_Z              XDATA         00000180 - 0000028F         110   rel    0
+ISTACK               IDATA         00000040 - 000000FF          C0   rel    0
+
+                ****************************************
+                *                                      *
+                *        END OF CROSS REFERENCE        *
+                *                                      *
+                ****************************************
+
+ 1 958 bytes of CODE  memory (+             90 range fill )
+    14 bytes of DATA  memory (+ 26 absolute )
+   656 bytes of XDATA memory
+   192 bytes of IDATA memory
+     8 bits  of BIT   memory
+
+Errors: none
+Warnings: none
+

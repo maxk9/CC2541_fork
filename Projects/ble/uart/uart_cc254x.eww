@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\uart_dma_cc254x.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\uart_isr_cc254x.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\uart_poll_cc254x.ewp</path>
+  </project>
+  <batchBuild/>
+</workspace>
+
+
