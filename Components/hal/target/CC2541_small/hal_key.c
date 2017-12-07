@@ -310,6 +310,12 @@ void HalKeyConfig (bool interruptEnable, halKeyCBack_t cback)
 
     osal_set_event(Hal_TaskID, HAL_KEY_EVENT);
   }
+  
+  
+#ifdef DEBUG_GPIO
+      // TEMP
+      P1DIR |= 1;   //p1_0 - output
+#endif // DEBUG_GPIO
 
   /* Key now is configured */
   HalKeyConfigured = TRUE;

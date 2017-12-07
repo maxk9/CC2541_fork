@@ -324,7 +324,7 @@ void HalLedUpdate (void)
 
               if ( !(sts->mode & HAL_LED_MODE_FLASH) )
               {
-               // sts->left--;                         // Not continuous, reduce count
+                sts->left--;                         // Not continuous, reduce count
               }
             }
             else if ( !(sts->left) && !(sts->mode & HAL_LED_MODE_FLASH) )

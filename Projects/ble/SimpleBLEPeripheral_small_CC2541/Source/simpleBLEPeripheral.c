@@ -41,6 +41,9 @@
  Should you have any questions regarding your right to use this Software,
  contact Texas Instruments Incorporated at www.TI.com.
 
+POWER_SAVING
+DEBUG_GPIO
+
  ******************************************************************************
  Release Name: ble_sdk_1.4.2.2
  Release Date: 2016-06-09 06:57:10
@@ -576,14 +579,20 @@ static void simpleBLEPeripheral_HandleKeys( uint8 shift, uint8 keys )
   {
     SK_Keys |= HAL_KEY_SW_1;
     Send_UART_string( "Key 1" );
+    HalLedSet(HAL_LED_2,HAL_LED_MODE_ON);
   }
-
+    else
+        HalLedSet(HAL_LED_2,HAL_LED_MODE_OFF);
+  
   if ( keys & HAL_KEY_SW_2 )
   {
 
     SK_Keys |= HAL_KEY_SW_2;
     Send_UART_string( "Key 2" );
+    HalLedSet(HAL_LED_3,HAL_LED_MODE_ON);
   }
+  else
+        HalLedSet(HAL_LED_3,HAL_LED_MODE_OFF);
 
   // Set the value of the keys state to the Simple Keys Profile;
   // This will send out a notification of the keys state if enabled
@@ -659,7 +668,7 @@ static void peripheralStateNotificationCB( gaprole_States_t newState )
     case GAPROLE_ADVERTISING:
       {
           Send_UART_string( "Advertising" );
-          HalLedSet(HAL_LED_1, HAL_LED_MODE_FLASH);  // LEDs to ON.
+          //HalLedSet(HAL_LED_1, HAL_LED_MODE_FLASH);  // LEDs to ON.
       }
       break;
 
@@ -723,8 +732,8 @@ static void peripheralStateNotificationCB( gaprole_States_t newState )
     case GAPROLE_WAITING:
       {
         
-          Send_UART_string( "Disconnected" );
-
+            Send_UART_string( "Disconnected" );
+            HalLedSet(HAL_LED_1, HAL_LED_MODE_OFF);  // LED to OFF.
           
 #ifdef PLUS_BROADCASTER                
         uint8 advertEnabled = TRUE;

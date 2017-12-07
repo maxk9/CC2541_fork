@@ -82,9 +82,9 @@ extern "C"
 
 /* Defaults */
 #define HAL_LED_DEFAULT_MAX_LEDS      1
-#define HAL_LED_DEFAULT_DUTY_CYCLE    10
+#define HAL_LED_DEFAULT_DUTY_CYCLE    9
 #define HAL_LED_DEFAULT_FLASH_COUNT   100
-#define HAL_LED_DEFAULT_FLASH_TIME    1000
+#define HAL_LED_DEFAULT_FLASH_TIME    500
 
 /*********************************************************************
  * TYPEDEFS

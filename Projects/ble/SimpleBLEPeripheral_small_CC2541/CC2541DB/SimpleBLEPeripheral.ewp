@@ -1451,7 +1451,6 @@
                     <state>HAL_KEY=TRUE</state>
                     <state>MAKE_CRC_SHDW</state>
                     <state>FEATURE_SBL</state>
-                    <state>POWER_SAVING=TRUE</state>
                 </option>
                 <option>
                     <name>CCPreprocFile</name>
